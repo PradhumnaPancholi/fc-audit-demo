@@ -20,12 +20,12 @@ contract TestToken is Token {
     // Excercise 2: Test access control //
     // Consider paused() to be called at deployment, and the ownership removed.
     // Add a property to check that the contract cannot be unpaused.
-    constructor() {
-        pause(); //pause the contract //
-        owner = address(0x0); //revoked ownership //
-    }
+    // constructor() {
+    //     pause(); //pause the contract //
+    //     owner = address(0x0); //revoked ownership //
+    // }
 
-    function echidna_test_no_transfer_at_pause() public view returns (bool) {
-        return is_paused == true;
-    }
+    // function echidna_test_no_transfer_at_pause() public view returns (bool) {
+    //     return is_paused == true;
+    // }
 }
